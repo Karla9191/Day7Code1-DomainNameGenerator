@@ -13,22 +13,15 @@ window.onload = function() {
 
   let noun = ["jogger", "racoon"];
 
-  let ext = [".com", ".es", ".net", ".us", ".io"];
+  let ext = [".com", ".net", ".us", ".io"];
 
-  let RanPronoun = pronoun[Math.floor(Math.random() * pronoun.length)];
+  for (let i = 0; i < ext.length; i++) {
+    for (let i = 0; i < noun.length; i++) {
+      for (let i = 0; i < adj.length; i++) {
+        for (let i = 0; i < pronoun.length; i++) {}
+      }
+    }
 
-  let RanAdj = adj[Math.floor(Math.random() * adj.length)];
-
-  let RanNoun = noun[Math.floor(Math.random() * noun.length)];
-
-  let RanExt = ext[Math.floor(Math.random() * ext.length)];
-
-  let totalFrase = RanPronoun + RanAdj + RanNoun + RanExt;
-
-  for (let i = 0; i < pronoun.length; i++) {
-    console.log("Hello Karla desde console.log!" + pronoun[i]);
-    document.getElementById("excuseF").innerHTML = totalFrase;
+    console.log(pronoun[i] + adj[i] + noun[i] + ext[i]);
   }
-
-  document.getElementById("excuseF").innerHTML = totalFrase;
 };
