@@ -22,6 +22,13 @@ window.onload = function() {
       }
     }
 
-    console.log(pronoun[i] + adj[i] + noun[i] + ext[i]);
+    console.log(pronoun[0] + adj[0] + noun[0] + ext[i]);
+    console.log(pronoun[0] + adj[0] + noun[1] + ext[i]);
+    console.log(pronoun[0] + adj[1] + noun[0] + ext[i]);
+    console.log(pronoun[0] + adj[1] + noun[1] + ext[i]);
+    console.log(pronoun[1] + adj[0] + noun[0] + ext[i]);
+    console.log(pronoun[1] + adj[0] + noun[1] + ext[i]);
+    console.log(pronoun[1] + adj[1] + noun[0] + ext[i]);
+    console.log(pronoun[1] + adj[1] + noun[1] + ext[i]);
   }
 };
